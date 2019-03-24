@@ -33,15 +33,4 @@ sudo apt-get install ros-kinetic-interactive-marker -y
 sudo apt-get install ros-kinetic-gazebo-ros -y
 </code></pre>
 
-## SSH Setting
-
-<pre><code>
-
-sudo apt-get install ssh -y 
-
-ssh remote_id@remote_ip
-
-</code></pre>
-
-
 
