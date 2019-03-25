@@ -1,6 +1,0 @@
-<launch>
-   <node pkg="zetabank_example" type="zetabank_marker_server" name="zetabank_marker_server">
-     <remap from="interactive_marker_velocity_smoother/raw_cmd_vel" to="cmd_vel"/>
-  </node>
-
-</launch>

@@ -1,4 +1,0 @@
-<launch>
-  <node pkg="zetabank_example" type="zetabank_pointop_key.py" name="zetabank_pointop_keyboard"  output="screen">
-  </node>
-</launch>
