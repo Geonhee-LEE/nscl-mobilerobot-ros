@@ -4,7 +4,7 @@
   <arg name="z_pos" default="0.0"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find zetabank_gazebo)/models/empty.world"/>
+    <arg name="world_name" value="$(find nscl_gazebo)/models/empty.world"/>
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
@@ -12,8 +12,8 @@
     <arg name="debug" value="false"/>
   </include>
 
-<param name="robot_description" command="$(find xacro)/xacro.py $(find zetabank_description)/urdf/zetabank.urdf.xacro" />
+<param name="robot_description" command="$(find xacro)/xacro.py $(find nscl_description)/urdf/nscl.urdf.xacro" />
 
 
-  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model zetabank -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model nscl -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
 </launch>
