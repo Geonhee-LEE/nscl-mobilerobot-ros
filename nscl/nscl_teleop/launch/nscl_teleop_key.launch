@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="nscl_teleop" type="nscl_teleop_key" name="nscl_teleop_keyboard"  output="screen">
+  </node>
+</launch>

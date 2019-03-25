@@ -1,0 +1,8 @@
+<launch>
+
+  <include file="$(find nscl_bringup)/launch/nscl_core.launch"/>
+  <include file="$(find nscl_bringup)/launch/nscl_lidar_sick561.launch"/>
+
+  <node pkg="nscl_bringup" type="nscl_diagnostics" name="nscl_diagnostics" output="screen" />
+
+</launch>
